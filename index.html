@@ -563,6 +563,19 @@ const TS = {
 };
 
 const WORKOUTS = {
+  // CZWARTEK — Regeneracja + Mobilność
+  4:[
+    {id:'cat_cow',    name:'Cat-Cow',                  sets:3, reps:'10 powt.', muscle:'Mobilność'},
+    {id:'child_pose', name:'Child's Pose',             sets:3, reps:'30 sek',  muscle:'Mobilność'},
+    {id:'rot_pier',   name:'Rotacje piersiowe w klęku', sets:3, reps:'10/stronę',muscle:'Mobilność'},
+    {id:'glute_br_t', name:'Glute Bridge',              sets:3, reps:'15 powt.', muscle:'Mobilność'},
+    {id:'hip_flex',   name:'Hip Flexor Stretch',        sets:3, reps:'30 sek',  muscle:'Biodra'},
+    {id:'pigeon',     name:'Pigeon Pose',               sets:2, reps:'45 sek',  muscle:'Biodra'},
+    {id:'leg_swing',  name:'Lateral Leg Swings',        sets:2, reps:'15/stronę',muscle:'Biodra'},
+    {id:'chest_str',  name:'Doorway Chest Stretch',     sets:3, reps:'30 sek',  muscle:'Rozciąganie'},
+    {id:'neck_roll',  name:'Neck Rolls (powoli)',        sets:2, reps:'10 powt.', muscle:'Rozciąganie'},
+    {id:'shoulder_x', name:'Shoulder Cross Stretch',    sets:3, reps:'30 sek',  muscle:'Rozciąganie'},
+  ],
   // PONIEDZIAŁEK — Plecy + Biceps (kable ATX + Smith)
   1:[
     {id:'lat_pull',  name:'Lat Pulldown (klęcząco)', sets:4, reps:'10–12', muscle:'Plecy'},
@@ -611,7 +624,10 @@ const MUSCLE_C = {
   Barki:  {bg:'rgba(74,122,56,.12)',  text:'#4a7a38'},
   Triceps:{bg:'rgba(138,64,48,.12)',  text:'#8a4030'},
   Core:   {bg:'rgba(88,58,122,.12)',  text:'#583a7a'},
-  Nogi:   {bg:'rgba(32,96,122,.12)',  text:'#20607a'},
+  Nogi:       {bg:'rgba(32,96,122,.12)',  text:'#20607a'},
+  Mobilność:  {bg:'rgba(122,32,96,.12)',   text:'#7a2060'},
+  Biodra:     {bg:'rgba(96,122,32,.12)',   text:'#607a20'},
+  Rozciąganie:{bg:'rgba(32,122,96,.12)',   text:'#207a60'},
 };
 
 function getSupps(dow) {
