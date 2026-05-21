@@ -519,27 +519,11 @@ input, textarea { font-family: inherit; outline: none; }
 // ════════════════════════════════════════════════════
 //  DATA
 // ════════════════════════════════════════════════════
-const STORE_KEY = 'filip_v7';
+const STORE_KEY = 'filip_progres_v5';
 
 function dbLoad() {
-  try {
-    // Sprawdź aktualny klucz
-    let r = localStorage.getItem(STORE_KEY);
-    if(r) return JSON.parse(r);
-    // Migracja ze starych kluczy
-    const oldKeys = ['filip_progres_v5', 'filip_progres_v6', 'filip_v6', 'filip_v5'];
-    for(const key of oldKeys) {
-      const old = localStorage.getItem(key);
-      if(old) {
-        const parsed = JSON.parse(old);
-        localStorage.setItem(STORE_KEY, JSON.stringify(parsed));
-        localStorage.removeItem(key);
-        console.log('Migrated from', key);
-        return parsed;
-      }
-    }
-    return {};
-  } catch { return {}; }
+  try { const r = localStorage.getItem(STORE_KEY); return r ? JSON.parse(r) : {}; }
+  catch { return {}; }
 }
 function dbSave() {
   try { localStorage.setItem(STORE_KEY, JSON.stringify(DB)); }
