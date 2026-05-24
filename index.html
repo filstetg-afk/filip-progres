@@ -292,6 +292,8 @@ const TS = {
 
 const WORKOUTS = {
   1:[
+    {id:'warm_gb1',  name:'Glute Bridge (rozgrzewka)', sets:2, reps:'15',    muscle:'Rozgrzewka'},
+    {id:'warm_pl1',  name:'Plank z chowaniem miednicy',sets:2, reps:'30 sek',muscle:'Rozgrzewka'},
     {id:'lat_pull',  name:'Lat Pulldown (klęcząco)', sets:4, reps:'10–12', muscle:'Plecy'},
     {id:'seat_row',  name:'Seated Cable Row',         sets:4, reps:'10–12', muscle:'Plecy'},
     {id:'str_pull',  name:'Straight Arm Pulldown',    sets:3, reps:'12–15', muscle:'Plecy'},
@@ -301,6 +303,8 @@ const WORKOUTS = {
     {id:'rope_curl', name:'Rope Hammer Curl',         sets:3, reps:'12–15', muscle:'Biceps'},
   ],
   3:[
+    {id:'warm_gb3',  name:'Glute Bridge (rozgrzewka)', sets:2, reps:'15',    muscle:'Rozgrzewka'},
+    {id:'warm_pl3',  name:'Plank z chowaniem miednicy',sets:2, reps:'30 sek',muscle:'Rozgrzewka'},
     {id:'smith_flat', name:'Smith Bench Press (płasko)', sets:4, reps:'8–12',  muscle:'Klatka'},
     {id:'smith_inc',  name:'Smith Incline Press (ukos)',  sets:3, reps:'10–12', muscle:'Klatka'},
     {id:'cab_fly',    name:'Cable Fly (góra→dół)',        sets:3, reps:'12–15', muscle:'Klatka'},
@@ -311,6 +315,8 @@ const WORKOUTS = {
     {id:'ovh_ext',    name:'Overhead Cable Extension',    sets:3, reps:'12–15', muscle:'Triceps'},
   ],
   6:[
+    {id:'warm_gb6',  name:'Glute Bridge (rozgrzewka)', sets:2, reps:'15',    muscle:'Rozgrzewka'},
+    {id:'warm_pl6',  name:'Plank z chowaniem miednicy',sets:2, reps:'30 sek',muscle:'Rozgrzewka'},
     {id:'lat_sb',    name:'Lat Pulldown (klęcząco)',    sets:3, reps:'10–12',  muscle:'Plecy'},
     {id:'row_sb',    name:'Seated Cable Row',           sets:3, reps:'10–12',  muscle:'Plecy'},
     {id:'bench_sb',  name:'Smith Bench Press (płasko)', sets:3, reps:'10–12',  muscle:'Klatka'},
@@ -336,7 +342,8 @@ const MC = {
   Barki:  {bg:'rgba(74,122,56,.12)',  text:'#4a7a38'},
   Triceps:{bg:'rgba(138,64,48,.12)',  text:'#8a4030'},
   Core:   {bg:'rgba(88,58,122,.12)',  text:'#583a7a'},
-  Nogi:   {bg:'rgba(32,96,122,.12)',  text:'#20607a'},
+  Nogi:        {bg:'rgba(32,96,122,.12)',  text:'#20607a'},
+  Rozgrzewka:  {bg:'rgba(176,130,50,.12)',  text:'#8a6020'},
 };
 
 function getSupps(dow) {
@@ -356,6 +363,7 @@ function getSupps(dow) {
       {id:'witc',    label:'Wit C MSE 625mg'},
       {id:'maslan1', label:'Maślan Sodu (1)'},
       {id:'omega1',  label:'Omega 800 ×1'},
+      {id:'medargin1',label:'Medargin (rano)'},
       {id:'kreatyna',label:'Kreatyna 5g'},
     ]},
     {slot:'⏱️ Przed obiadem', items:[{id:'narala',label:'Na-RALA'}]},
@@ -368,6 +376,7 @@ function getSupps(dow) {
     ]},
     {slot:'🌙 Kolacja', items:[
       {id:'omega2', label:'Omega 800 ×1'},
+      {id:'medargin2',label:'Medargin (wieczór)'},
       {id:'maslan2',label:'Maślan Sodu (2)'},
       {id:'roticox',label:'Roticox 90mg', warn:true},
       {id:'sacrob', label:'Sacro-B'},
